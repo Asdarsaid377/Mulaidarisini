@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked Page - Red Glitch Theme</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #ff0000;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            overflow: hidden;
+        }
+        .hacked-text {
+            font-size: 3em;
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+            animation: glitch 0.5s infinite;
+        }
+        .quote {
+            font-size: 1.5em;
+            margin-top: 30px;
+            border: 2px solid #ff0000;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 0 15px #ff0000;
+        }
+        .hashtag {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #ff0000;
+            text-shadow: 0 0 5px #ff0000;
+        }
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+        .terminal {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px solid #ff0000;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            overflow: auto;
+            z-index: -1;
+        }
+        .terminal::before {
+            content: 'root@hacked:~# ';
+            color: #ff0000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal"></div>
+    <div class="hacked-text">ACCESS DENIED</div>
+    <div class="quote">
+        "Dan janganlah kamu campuradukkan kebenaran dengan kebatilan dan (janganlah) kamu sembunyikan kebenaran, sedangkan kamu mengetahuinya." <br>
+        (QS. Al-Baqarah: 42)
+    </div>
+    <div class="hashtag">#DIMULAIDARISINI</div>
+</body>
+</html>
